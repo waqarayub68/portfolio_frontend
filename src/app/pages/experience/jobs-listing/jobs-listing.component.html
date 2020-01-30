@@ -1,0 +1,32 @@
+<div style="padding:30px;">
+    <nz-card class="mt-3" *ngFor = "let job of jobs" nzTitle="{{job.company}}">
+        <div class="row">
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="d-block">
+                    <div class="d-flex inner-divs-containers">
+                        <div class="d-flex">
+                            <p><strong>Position:</strong></p>
+                            <p class="ml-2">{{job.position}}</p>
+                        </div>
+                        <div class="d-flex">
+                            <p><strong>Department:</strong></p>
+                            <p class="ml-2">{{job.dept}}</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                         <strong>Duration: </strong><p class="ml-2">{{job.from}} - {{job.to}}</p>
+                    </div>
+                    <div class="d-block">
+                        <strong>Overview: </strong>
+                        <p class="ml-2">{{job.overview}}</p>
+                   </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                <img src="{{job.image}}" alt="">
+            </div>
+        </div>
+
+    </nz-card>
+</div>

@@ -1,0 +1,72 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="mt-5 format-positioning">
+      <div class="d-block text-center style-content ml-4">
+
+        <img class="image-style" src="../../assets/images/fawad.jpg" alt="">
+        <p class="font-style-p">Waqar Ayub Khan</p>
+      </div>
+    </mat-toolbar>
+    <mat-nav-list class="mt-4">
+      <a class="font-style-p" mat-list-item routerLink="/dashboard">Dashboard</a>
+      <a class="font-style-p" mat-list-item routerLink="/projects">Projects</a>
+      <a class="font-style-p" mat-list-item routerLink="/experience">Experience</a>
+      <!-- <a class="font-style-p" mat-list-item routerLink="/advance-options">Advance</a>
+      <a class="font-style-p" mat-list-item routerLink="/view-profile">Profile</a> -->
+      <a class="font-style-p" mat-list-item (click)="open()">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <!-- <span>portfolio</span> -->
+      <div class="w-100 text-right">
+        <a class="drop-down-font" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+          More About Waqar
+          <i nz-icon nzType="down"></i>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item >
+              <a (click) = "navigation('/view-profile')">Profile</a>
+            </li>
+            <li nz-menu-item>Documents</li>
+            <li nz-menu-item>Advance Options</li>
+            <!-- <li nz-menu-divider></li> -->
+            <!-- <li nz-menu-item nzDisabled>disabled menu item</li> -->
+            <!-- <li nz-submenu nzTitle="sub menu">
+              <ul>
+                <li nz-menu-item>3rd menu item</li>
+                <li nz-menu-item>4th menu item</li>
+              </ul>
+            </li> -->
+
+          </ul>
+        </nz-dropdown-menu>
+      </div>
+    </mat-toolbar>
+    <ng-content>
+
+    </ng-content>
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<nz-drawer [nzWidth]="300" [nzClosable]="false" [nzVisible]="drawerVisibility" [nzPlacement]="placement"
+  nzTitle="Contact Areas" (nzOnClose)="close()">
+  <div class="d-flex drawer-content-div" *ngFor = "let contact of contacts">
+    <img class="contact-icon" src="{{contact.image}}" alt="">
+      <p class="p-drawer-content">
+        <strong>{{contact.site}}</strong>
+        <a href="{{contact.link}}" target="_blank">{{contact.linkName}}</a>
+      </p>
+
+  </div>
+</nz-drawer>

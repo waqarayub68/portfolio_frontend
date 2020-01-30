@@ -1,0 +1,59 @@
+<div style="padding:30px;">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 w-100">
+            <nz-card nzTitle="Statistics">
+                <ngx-charts-line-chart [view]="view" (window:resize)="onResize($event)" [scheme]="colorScheme"
+                    [results]="multi" [gradient]="false" [xAxis]="true" [yAxis]="true" [legend]="false"
+                    [showXAxisLabel]="true" [showYAxisLabel]="true" [xAxisLabel]="'Germany'" [yAxisLabel]="'UsA'"
+                    (select)="onSelect($event)">
+                </ngx-charts-line-chart>
+
+            </nz-card>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 w-100 mt-3">
+            <nz-card >
+                <div class="text-center">
+                    <img src="../../../../assets/images/problem.png" alt="">
+                    <div>
+                        <span class="count-blocks ">Total Jobs 30</span>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12 w-100 mt-3">
+            <nz-card >
+                <div class="text-center">
+                    <img src="../../../../assets/images/pending.png" alt="">
+                    <div>
+                        <span class="count-blocks ">In-Progress Jobs 15</span>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12 w-100 mt-3">
+            <nz-card >
+                <div class="text-center">
+                    <img src="../../../../assets/images/check.png" alt="">
+                    <div>
+                        <span class="count-blocks ">Jobs Completed 15</span>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12 w-100 mt-3">
+            <nz-card nzTitle="Acadamic & Other Records">
+                <ngx-charts-pie-grid [view]="view1" [scheme]="colorScheme" [results]="single"
+                    (select)="onSelect($event)">
+                </ngx-charts-pie-grid>
+            </nz-card>
+        </div>
+
+    </div>
+</div> 
+<!-- lsdmos -->

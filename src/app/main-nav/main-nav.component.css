@@ -1,0 +1,59 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.format-positioning {
+  margin-top: 40% !important;
+}
+.mat-drawer {
+  background-color: #191919 !important;
+  /* color: #f7f7f7 !important; */
+}
+.mat-list-base .mat-list-item {
+  color: #f7f7f7 !important;
+}
+.mat-toolbar.mat-primary {
+  background: #191919 !important;
+  color: #f7f7f7 !important;
+}
+.style-content {
+  color: #f7f7f7;
+}
+.image-style {
+  height: 78px;
+  border-radius: 50px;
+}
+.font-style-p {
+  font-size: 15px;
+  font-weight: 100;
+}
+.drop-down-font {
+  font-size: 13px;
+    font-weight: 300;
+}
+.contact-icon {
+  height: 25px;
+}
+.drawer-content-div {
+  border-bottom: 1px solid;
+  margin-top: 10%;
+}
+.p-drawer-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: -3%;
+}
