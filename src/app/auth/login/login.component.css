@@ -1,0 +1,45 @@
+[nz-carousel-content] {
+    text-align: center;
+  /* height: 160px; */
+  /* line-height: 160px; */
+  color: #fff;
+  overflow: hidden;
+  /* background-image: url('../../../assets/images/1.jpeg'); */
+  /* background: #364d79; */
+}
+.upper-div {
+  /* background: #364d79 !important; */
+  background-image: url('../../../assets/images/portfolio.jpg');
+}
+h3 {
+  color: #fff;
+  /* background-image: url('../../../assets/images/1.jpeg'); */
+}
+.btn-next {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  /* border: 1px solid; */
+}
+.picture-welcome {
+  width: 25%;
+  border-radius: 50%;
+}
+.margin-div-top {
+  margin-top: 50%;
+}
+.h5-styling {
+    color: white;
+}
+
+.small-screen {
+  display: none;
+}
+.slider-div {
+  line-height: 0;
+  padding-top: 57%;
+  color: darkred;
+  font-weight: 600;
+}
+
+

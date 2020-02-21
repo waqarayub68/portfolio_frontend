@@ -10,9 +10,9 @@
       </div>
     </mat-toolbar>
     <mat-nav-list class="mt-4">
-      <a class="font-style-p" mat-list-item routerLink="/dashboard">Dashboard</a>
-      <a class="font-style-p" mat-list-item routerLink="/projects">Projects</a>
-      <a class="font-style-p" mat-list-item routerLink="/experience">Experience</a>
+      <a class="font-style-p" mat-list-item routerLink="/pages/dashboard">Dashboard</a>
+      <a class="font-style-p" mat-list-item routerLink="/pages/projects">Projects</a>
+      <a class="font-style-p" mat-list-item routerLink="/pages/experience">Experience</a>
       <!-- <a class="font-style-p" mat-list-item routerLink="/advance-options">Advance</a>
       <a class="font-style-p" mat-list-item routerLink="/view-profile">Profile</a> -->
       <a class="font-style-p" mat-list-item (click)="open()">Contact</a>
@@ -33,10 +33,18 @@
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
             <li nz-menu-item >
-              <a (click) = "navigation('/view-profile')">Profile</a>
+              <a (click) = "navigation('/pages/view-profile')">Profile</a>
             </li>
-            <li nz-menu-item>Documents</li>
-            <li nz-menu-item>Advance Options</li>
+            <li nz-menu-item>
+              <a (click) = "navigation('/pages/documents')">
+                Documents
+              </a>
+            </li>
+            <li nz-menu-item >
+              <a (click) = "navigation('/pages/advance-options')">
+                Advance Options
+              </a>
+            </li>
             <!-- <li nz-menu-divider></li> -->
             <!-- <li nz-menu-item nzDisabled>disabled menu item</li> -->
             <!-- <li nz-submenu nzTitle="sub menu">
@@ -53,7 +61,7 @@
     <ng-content>
 
     </ng-content>
-
+    <router-outlet></router-outlet>
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
@@ -70,3 +78,5 @@
 
   </div>
 </nz-drawer>
+
+<!-- <router-outlet></router-outlet> -->

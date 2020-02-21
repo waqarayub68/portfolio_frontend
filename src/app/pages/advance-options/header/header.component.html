@@ -1,1 +1,39 @@
-<p>header works!</p>
+<div style="padding:10px;">
+
+  <!-- <mat-tab-group>
+        <mat-tab label="Job Scheduler"> 
+            <app-scheduler></app-scheduler>
+            <router-outlet></router-outlet>
+              </mat-tab>
+        <mat-tab label="Second"> Content 2 </mat-tab>
+        <mat-tab label="Third"> Content 3 </mat-tab>
+    </mat-tab-group> -->
+
+  <!-- <nav mat-tab-nav-bar>
+        <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive"
+            [active]="rla.isActive">
+            {{link.label}}
+        </a>
+    </nav> -->
+
+  <nz-tabset *ngIf = "paddingEnabling" [nzTabPosition]="'left'" [(nzSelectedIndex)]="selectedIndex" (nzSelectChange)="log([$event])">
+    <nz-tab *ngFor="let tab of tabs" [nzTitle]="tab.name" (nzSelect)="log(['select', tab])"
+      (nzClick)="log(['click', tab])" (nzDeselect)="log(['deselect', tab])">
+
+        <app-scheduler *ngIf = "tab.id === 1"></app-scheduler>
+        <app-maps *ngIf = "tab.id === 2"></app-maps>
+        <app-forms-example *ngIf = "tab.id === 3"></app-forms-example>
+    </nz-tab>
+  </nz-tabset>
+
+  <nz-tabset *ngIf = "!paddingEnabling" [nzTabPosition]="'top'" [(nzSelectedIndex)]="selectedIndex" (nzSelectChange)="log([$event])">
+    <nz-tab *ngFor="let tab of tabs" [nzTitle]="tab.name" (nzSelect)="log(['select', tab])"
+      (nzClick)="log(['click', tab])" (nzDeselect)="log(['deselect', tab])">
+
+        <app-scheduler *ngIf = "tab.id === 1"></app-scheduler>
+        <app-maps *ngIf = "tab.id === 2"></app-maps>
+        <app-forms-example *ngIf = "tab.id === 3"></app-forms-example>
+    </nz-tab>
+  </nz-tabset>
+
+</div>

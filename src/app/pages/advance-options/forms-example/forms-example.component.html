@@ -1,0 +1,77 @@
+<nz-card>
+    <h6>Horizontal Stepper Form</h6>
+    <mat-horizontal-stepper #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <form>
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name" required>
+                </mat-form-field>
+                <div>
+                    <button class="btn btn-dark" matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form>
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Address" required>
+                </mat-form-field>
+                <div>
+                    <button class="btn btn-dark" matStepperPrevious>Back</button>
+                    <button class="btn btn-dark ml-2" matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            You are now done.
+            <div>
+                <button class="btn btn-dark" matStepperPrevious>Back</button>
+                <button class="btn btn-dark ml-2" (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</nz-card>
+
+<nz-card class="mt-3">
+    <h6>Vertical Stepper Form</h6>
+    <mat-vertical-stepper #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <form>
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name" required>
+                </mat-form-field>
+                <div>
+                    <button class="btn btn-dark" matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form>
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Address" required>
+                </mat-form-field>
+                <div>
+                    <button class="btn btn-dark" matStepperPrevious>Back</button>
+                    <button class="btn btn-dark ml-2" matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            You are now done.
+            <div>
+                <button class="btn btn-dark" matStepperPrevious>Back</button>
+                <button class="btn btn-dark ml-2" (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-vertical-stepper>
+</nz-card>

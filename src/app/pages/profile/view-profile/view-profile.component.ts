@@ -11,13 +11,13 @@ export class ViewProfileComponent implements OnInit {
   screenWidth = false;
   paddingEnabling = false;
   ngOnInit() {
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     if (window.innerWidth >= 768) {
       this.paddingEnabling = true;
     } else {
       this.paddingEnabling = false;
     }
-    console.log(this.paddingEnabling);
+    // console.log(this.paddingEnabling);
     
   }
   @HostListener('window:resize', ['$event'])
