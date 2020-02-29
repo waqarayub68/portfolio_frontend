@@ -9,13 +9,13 @@
         <p class="font-style-p">Waqar Ayub Khan</p>
       </div>
     </mat-toolbar>
-    <mat-nav-list class="mt-4">
-      <a class="font-style-p" mat-list-item routerLink="/pages/dashboard">Dashboard</a>
-      <a class="font-style-p" mat-list-item routerLink="/pages/projects">Projects</a>
-      <a class="font-style-p" mat-list-item routerLink="/pages/experience">Experience</a>
+    <mat-nav-list class="mt-4 activation">
+      <a class="font-style-p" mat-list-item routerLink="/pages/dashboard" routerLinkActive="active">Dashboard</a>
+      <a class="font-style-p" mat-list-item routerLink="/pages/projects" routerLinkActive="active">Projects</a>
+      <a class="font-style-p" mat-list-item routerLink="/pages/experience" routerLinkActive="active">Experience</a>
       <!-- <a class="font-style-p" mat-list-item routerLink="/advance-options">Advance</a>
       <a class="font-style-p" mat-list-item routerLink="/view-profile">Profile</a> -->
-      <a class="font-style-p" mat-list-item (click)="open()">Contact</a>
+      <a class="font-style-p" mat-list-item (click)="open()" >Contact</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

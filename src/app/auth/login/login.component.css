@@ -8,8 +8,8 @@
   /* background: #364d79; */
 }
 .upper-div {
-  /* background: #364d79 !important; */
-  background-image: url('../../../assets/images/portfolio.jpg');
+  background: #191919  !important;
+  /* background-image: url('../../../assets/images/portfolio.jpg'); */
 }
 h3 {
   color: #fff;
@@ -17,7 +17,7 @@ h3 {
 }
 .btn-next {
   color: white;
-  background-color: black;
+  background-color: #191919;
   border-radius: 5px;
   /* border: 1px solid; */
 }
@@ -40,6 +40,12 @@ h3 {
   padding-top: 57%;
   color: darkred;
   font-weight: 600;
+}
+.img-main {
+  width: 30%;
+  height: 30%;
+  top: 50% !important;
+  margin-top: 8%;
 }
 
 

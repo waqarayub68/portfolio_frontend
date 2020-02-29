@@ -57,3 +57,13 @@
     margin-left: 5%;
     margin-top: -3%;
 }
+.activation {
+
+}
+.active {
+  background-color: #8B0000;
+}
+.mat-action-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-list-option:focus, .mat-list-option:hover, .mat-nav-list .mat-list-item:focus, .mat-nav-list .mat-list-item:hover {
+  /* background: #8B0000 !important; */
+  color: #8B0000 !important;
+}

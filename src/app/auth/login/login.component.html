@@ -1,12 +1,27 @@
-
 <div class="row h-100" style="margin-right: 0px !important;">
-    <div class="col-md-8  upper-div" [ngClass] = "{'small-screen': enableResponsiveness}">
+    <div class="col-md-8  upper-div text-center" [ngClass]="{'small-screen': enableResponsiveness}">
 
-        <nz-carousel nzAutoPlay>
+
+        <!-- <p  style="color: blanchedalmond;">abc</p> -->
+        <div class="h-100">
+
+            <img class="img-main" [@EnterLeave]="'flyIn'" src="../../../assets/images/hello.png" alt="portfolio">
+            <div [@fromBottom]="'flyBttom'">
+                <ul style="color: white; list-style: none; ">
+                    <li>
+
+                        I am a professional full stack developer having more than 1 year experience.
+                    </li>
+                    <li>
+
+                        You can view as a guest more about me
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <nz-carousel nzAutoPlay>
             <div nz-carousel-content  *ngFor="let index of array">
 
-
-                <!-- <h3 class="mt-5">{{ index }}</h3> -->
                 <div class="slider-div" *ngIf = "index === 1">
                     <p>Hey It's Waqar Ayub</p>
                 </div>
@@ -30,7 +45,7 @@
                     
                 </div>
             </div>
-        </nz-carousel>
+        </nz-carousel> -->
     </div>
 
     <div class="col-md-4 text-center" style="background: brown;">

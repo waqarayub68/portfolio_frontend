@@ -1,0 +1,14 @@
+.d-grid {
+    display: grid;
+}
+.p-blocks {
+    font-size: 20px;
+    margin-bottom: 0rem !important;
+}
+.icon-images {
+    height: 100px;
+    width: 100px;
+}
+.innerdiv-stats {
+    margin-top: 15%;
+}

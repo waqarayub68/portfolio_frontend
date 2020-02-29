@@ -2,56 +2,188 @@
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 w-100">
             <nz-card nzTitle="Statistics">
-                <ngx-charts-line-chart [view]="view" (window:resize)="onResize($event)" [scheme]="colorScheme"
-                    [results]="multi" [gradient]="false" [xAxis]="true" [yAxis]="true" [legend]="false"
-                    [showXAxisLabel]="true" [showYAxisLabel]="true" [xAxisLabel]="'Germany'" [yAxisLabel]="'UsA'">
-                </ngx-charts-line-chart>
+                <div class="w-100 pr-3 d-grid">
+
+                    <ngx-charts-line-chart [scheme]="colorScheme" [results]="multi" [gradient]="false" [xAxis]="true"
+                        [yAxis]="true" [legend]="false" [showXAxisLabel]="true" [showYAxisLabel]="true"
+                        [xAxisLabel]="'Germany'" [yAxisLabel]="'UsA'">
+                    </ngx-charts-line-chart>
+                </div>
 
             </nz-card>
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12 w-100 mt-3">
-            <nz-card >
-                <div class="text-center">
-                    <img src="../../../../assets/images/problem.png" alt="">
+            <nz-card>
+                <div class="d-inline-flex">
                     <div>
-                        <span class="count-blocks ">Total Jobs 30</span>
+
+                        <img class="icon-images" src="../../../../assets/images/icons8-job-seeker-100.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">Total Projects</p>
+                                <p class="p-blocks">8</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nz-card>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12 w-100 mt-3">
-            <nz-card >
-                <div class="text-center">
-                    <img src="../../../../assets/images/pending.png" alt="">
+            <nz-card>
+
+                <div class="d-inline-flex">
                     <div>
-                        <span class="count-blocks ">In-Progress Jobs 15</span>
+
+                        <img class="icon-images" src="../../../../assets/images/icons8-in-progress-64.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">In-Progress Jobs</p>
+                                <p class="p-blocks">3</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </nz-card>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12 w-100 mt-3">
-            <nz-card >
-                <div class="text-center">
-                    <img src="../../../../assets/images/check.png" alt="">
+            <nz-card>
+
+                <div class="d-inline-flex">
                     <div>
-                        <span class="count-blocks ">Jobs Completed 15</span>
+
+                        <img class="icon-images" src="../../../../assets/images/icons8-task-completed-64.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">Jobs Completed</p>
+                                <p class="p-blocks">5</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nz-card>
         </div>
 
+        <div class="col-md-6 col-sm-6 col-xs-12 w-100 mt-3">
+            <nz-card>
 
+                <div class="d-inline-flex">
+                    <div>
 
-        <div class="col-md-12 col-sm-12 col-xs-12 w-100 mt-3">
+                        <img class="icon-images" src="../../../../assets/images/icons8-microsoft-admin-100.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">Admin Panels</p>
+                                <p class="p-blocks">3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12 w-100 mt-3">
+            <nz-card>
+
+                <div class="d-inline-flex">
+                    <div>
+
+                        <img class="icon-images" src="../../../../assets/images/icons8-commercial-64.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">Commercial Applications</p>
+                                <p class="p-blocks">2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12 w-100 mt-3">
+            <nz-card>
+
+                <div class="d-inline-flex">
+                    <div>
+
+                        <img class="icon-images" src="../../../../assets/images/angular.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">Angular Projects</p>
+                                <p class="p-blocks">6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12 w-100 mt-3">
+            <nz-card>
+
+                <div class="d-inline-flex">
+                    <div>
+
+                        <img class="icon-images" src="../../../../assets/images/icons8-windows-10-64.png" alt="">
+                    </div>
+                    <div class="ml-3">
+
+                        <div class="innerdiv-stats">
+                            <div class="d-block">
+                                <p class="p-blocks" style="color: black;">Node JS Projects</p>
+                                <p class="p-blocks">2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 w-100 mt-3">
+            <nz-card nzTitle="Comments & Reviews">
+                <div class="w-100 pr-3 d-grid">
+
+                    <ngx-charts-pie-chart [scheme]="colorScheme" [results]="single" [gradient]="gradient"
+                        [legend]="false" [legendPosition]="legendPosition" [labels]="showLabels" [doughnut]="true">
+                    </ngx-charts-pie-chart>
+                </div>
+            </nz-card>
+        </div>
+
+        <div class="col-md-8 col-sm-12 col-xs-12 w-100 mt-3">
             <nz-card nzTitle="Acadamic & Other Records">
-                <ngx-charts-pie-grid [view]="view1" [scheme]="colorScheme" [results]="single">
-                </ngx-charts-pie-grid>
+                <div class="w-100 pr-3 d-grid">
+
+                    <ngx-charts-bar-vertical [scheme]="colorScheme" [results]="single" [gradient]="gradient"
+                        [xAxis]="false" [yAxis]="false" [legend]="false" [showXAxisLabel]="false"
+                        [showYAxisLabel]="false" [xAxisLabel]="'Country'" [yAxisLabel]="'Popolation'"
+                        (select)="onSelect($event)">
+                    </ngx-charts-bar-vertical>
+                </div>
             </nz-card>
         </div>
 
     </div>
-</div> 
+</div>
 <!-- lsdmos -->

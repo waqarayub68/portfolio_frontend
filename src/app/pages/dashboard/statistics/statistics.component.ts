@@ -11,7 +11,7 @@ export class StatisticsComponent implements OnInit {
   view1: any[] = [];
   view2: any[] = [];
   colorScheme = {
-    domain: ['#9370DB', '#87CEFA', '#FA8072', '#FF7F50', '#90EE90', '#9370DB']
+    domain: ['#000000', 	'#8B0000']
   };
   public multi = [
     {
