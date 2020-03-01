@@ -1,7 +1,7 @@
 <nz-card>
     <h6>Horizontal Stepper Form</h6>
     <mat-horizontal-stepper #stepper>
-        <mat-step [stepControl]="firstFormGroup">
+        <mat-step>
             <form>
                 <ng-template matStepLabel>Fill out your name</ng-template>
                 <mat-form-field appearance="outline">
@@ -13,7 +13,7 @@
                 </div>
             </form>
         </mat-step>
-        <mat-step [stepControl]="secondFormGroup">
+        <mat-step>
             <form>
                 <ng-template matStepLabel>Fill out your address</ng-template>
                 <mat-form-field appearance="outline">
@@ -40,7 +40,7 @@
 <nz-card class="mt-3">
     <h6>Vertical Stepper Form</h6>
     <mat-vertical-stepper #stepper>
-        <mat-step [stepControl]="firstFormGroup">
+        <mat-step>
             <form>
                 <ng-template matStepLabel>Fill out your name</ng-template>
                 <mat-form-field appearance="outline">
@@ -52,7 +52,7 @@
                 </div>
             </form>
         </mat-step>
-        <mat-step [stepControl]="secondFormGroup">
+        <mat-step>
             <form>
                 <ng-template matStepLabel>Fill out your address</ng-template>
                 <mat-form-field appearance="outline">

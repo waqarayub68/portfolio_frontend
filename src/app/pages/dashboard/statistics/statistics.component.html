@@ -164,8 +164,8 @@
             <nz-card nzTitle="Comments & Reviews">
                 <div class="w-100 pr-3 d-grid">
 
-                    <ngx-charts-pie-chart [scheme]="colorScheme" [results]="single" [gradient]="gradient"
-                        [legend]="false" [legendPosition]="legendPosition" [labels]="showLabels" [doughnut]="true">
+                    <ngx-charts-pie-chart [scheme]="colorScheme" [results]="single" [gradient]="false"
+                        [legend]="false" [labels]="false" [doughnut]="true">
                     </ngx-charts-pie-chart>
                 </div>
             </nz-card>
@@ -175,10 +175,9 @@
             <nz-card nzTitle="Acadamic & Other Records">
                 <div class="w-100 pr-3 d-grid">
 
-                    <ngx-charts-bar-vertical [scheme]="colorScheme" [results]="single" [gradient]="gradient"
+                    <ngx-charts-bar-vertical [scheme]="colorScheme" [results]="single" [gradient]="false"
                         [xAxis]="false" [yAxis]="false" [legend]="false" [showXAxisLabel]="false"
-                        [showYAxisLabel]="false" [xAxisLabel]="'Country'" [yAxisLabel]="'Popolation'"
-                        (select)="onSelect($event)">
+                        [showYAxisLabel]="false" [xAxisLabel]="'Country'" [yAxisLabel]="'Popolation'">
                     </ngx-charts-bar-vertical>
                 </div>
             </nz-card>
